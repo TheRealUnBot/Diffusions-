@@ -24,7 +24,7 @@ trainer = Trainer(
     # exponential moving average decay
     ema_decay = 0.995,
     # turn on mixed precision training with apex              
-    fp16 = False
+    fp16 = True
 )
 trainer.train()
 sampled_images = diffusion.sample(batch_size = 1)
